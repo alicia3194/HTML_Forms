@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms Bikes</title>
+    </head>
+</head>
+
+<body>
+    <nav>
+        <a href="../index.html">Forms viejuner</a>
+        <a href="./page.html">Forms bikes</a>
+    </nav>
+
+    <h1>Formulario de Bicicletas</h1>
+
+    <form action="procesar.php" method="post">
+        <label for="fecha">Día:</label>
+        <input type="date" id="fecha" name="fecha" required><br>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required><br>
+
+        <label for="color">Color de la bicicleta:</label>
+        <input type="text" id="color" name="color" required placeholder="Escribe aqui"><br>
+
+        <label for="precio">Rango de precio:</label>
+        <input type="range" id="precio" name="precio" min="0" max="1000" step="10" value="500"><br>
+
+        <label for="tipo">Tipo de bicicleta:</label>
+        <select id="tipo" name="tipo">
+            <option value="Paseo">Paseo</option>
+            <option value="Señorial">Señorial</option>
+            <option value="Anti-plebeyos">Anti-plebeyos</option>
+            <option value="PorEncimaDelHombro">PorEncimaDelHombro</option>
+            <option value="Montaña">Montaña</option>
+            <option value="Gamusinos">Gamusinos</option>
+            <option value="Hueleflores premium">Hueleflores premium</option>
+            <option value="Fango lover">Fango lover</option>
+            <option value="Carreras">Carreras</option>
+            <option value="Metroymedio">Metroymedio</option>
+            <option value="3 de la tarde. Fluorescente edition">3 de la tarde. Fluorescente edition</option>
+            <option value="Grupitors">Grupitors</option>
+        </select><br>
+
+        <label for="accesorios">Accesorios:</label>
+        <select id="accesorios" name="accesorios" multiple>
+            <option value="Ruedines">Ruedines</option>
+            <option value="Pegatinas">Pegatinas</option>
+            <option value="Cestita">Cestita</option>
+            <option value="Bomba de aire">Bomba de aire</option>
+            <option value="Timbre">Timbre</option>
+            <option value="Foco">Foco</option>
+        </select><br>
+
+        <label for="marca">¿Qué marca era?:</label>
+        <select id="marca" name="marca">
+            <option value="specialized">Specialized</option>
+            <option value="trek">Trek</option>
+            <option value="merida">Merida</option>
+            <option value="scott">Scott</option>
+            <option value="giant">Giant</option>
+            <option value="cube">Cube</option>
+            <option value="lapierre">Lapierre</option>
+            <option value="orbea">Orbea</option>
+            <option value="cannondale">Cannondale</option>
+            <option value="bmc">BMC</option>
+            <option value="canyon">Canyon</option>
+            <option value="look">Look</option>
+            <option value="protek">Protek</option>
+            <option value="megamo">Megamo</option>
+            <option value="pinarello">Pinarello</option>
+            <option value="bianchi">Bianchi</option>
+            <option value="bh">BH</option>
+            <option value="factor">Factor</option>
+            <option value="ghost">Ghost</option>
+            <option value="cervélo">Cervélo</option>
+            <option value="argon">Argon</option>
+        </select><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
